@@ -25,6 +25,7 @@ app.use('/api/v1/users', usersRouter);
 app.use('/api/v1/auth', require('./routes/auth'));
 app.use('/api/v1/products', require('./routes/products'))
 app.use('/api/v1/categories', require('./routes/categories'))
+app.use('/api/v1/inventories', require('./routes/inventories'))
 app.use('/api/v1/roles', require('./routes/roles'))
 mongoose.connect('mongodb://localhost:27017/NNPTUD-C5');
 mongoose.connection.on('connected', function () {
